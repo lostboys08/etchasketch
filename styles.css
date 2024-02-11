@@ -1,0 +1,26 @@
+body {
+    display: flex; /* Use flexbox for the body */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Set body height to 100% of viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+#grid-container {
+    display: flex; /* Use flexbox for the grid container */
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    justify-content: center; /* Center items horizontally within the grid container */
+}
+
+.grid-row {
+    display: flex; /* Use flexbox for rows */
+    flex-wrap: nowrap; /* Prevent items from wrapping within rows */
+}
+
+.grid-col {
+    flex: 1; /* Flex-grow: 1; each column takes equal space */
+    border: 1px solid black;
+    text-align: center; /* Center text within columns */
+    padding: 10px; /* Add padding for better spacing */
+    box-sizing: border-box; /* Include padding and border in the box model */
+}
